@@ -17,8 +17,10 @@ function App() {
   let lim = o.Limón
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
+      <div style={{color:'gray'}}>
     Lista de precios <br/>
     Última actualización: 15 de febrero de 2024
+    </div>
  <br/>
     <br/> <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
       Papa
