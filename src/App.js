@@ -1,8 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import whatsapp from './whatsappIcon.png';
 import './App.css';
 import { object } from './object';
+import whatsLogo from './assets/WhatsApp.png';
+import faceLogo from './assets/Facebook.png';
+import instaLogo from './assets/Instagram.png';
 
 function App() {
+  let colour = (color) => {return {color}}
   let o = object;
   let pot = o.Papa
   let bat = o.Batata
@@ -15,13 +20,37 @@ function App() {
   let nar = o.Naranja
   let fru = o.Frutilla
   let lim = o.Limón
+  let red = colour('red')
+  let orange = colour('orange')
+  let yellow = colour('yellow')
+  let orangered = colour('orangered')
+  let wheat = colour('wheat')
+  let yellowgreen = colour('yellowgreen')
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
       <div style={{color:'gray'}}>
     Lista de precios <br/>
     Última actualización: 15 de febrero de 2024
+    <br/>
+    Contacto:
     </div>
- <br/>
+    <br/>
+    <div>
+                {/* <div className='flex center'> */}
+                    <a href='https://wa.me/+541158774985' title='Enviar un mensaje de WhatsApp' target='_blank' rel="noreferrer">
+                        <img src={whatsLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                    </a>
+                
+                    {/* <a href='https://www.facebook.com/profile.php?id=100095438713871' title='Visitar página de facebook' target='_blank' rel="noreferrer">
+                        <img src={faceLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                    </a>
+                
+                    <a href='https://www.instagram.com/almacenstack/' title='Visitar página de instagram' target='_blank' rel="noreferrer">
+                        <img src={instaLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                    </a> */}
+                {/* </div> */}
+      {/* <img src={whatsapp} href='' style={{width: '50px', borderRadius: '8px'}}/> */}
+    </div>
     <br/> <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
       Papa
     <div style={{display: 'flex', justifyContent: 'space-between'}}>
@@ -150,27 +179,27 @@ function App() {
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Ofertas de fruta
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg manzana + 1kg naranja = {man['por kg oferta']+nar['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg manzana</b> + <b style={orange}>1kg naranja</b> = {man['por kg oferta']+nar['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'orange'}}> 1kg manzana + 1kg frutilla = {man['por kg oferta']+fru['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg manzana</b> + <b style={yellowgreen}>1kg frutilla</b> = {man['por kg oferta']+fru['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg frutilla + 1kg banana = {fru['por kg oferta']+ban['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {fru['por kg oferta']+ban['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'orange'}}> 1kg frutilla + 1kg naranja = {nar['por kg oferta']+fru['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg naranja</b> = {nar['por kg oferta']+fru['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg banana + 1kg naranja = {ban['por kg oferta']+nar['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg banana</b> + <b style={orange}>1kg naranja</b> = {ban['por kg oferta']+nar['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'orange'}}> 1kg banana + 1kg manzana = {man['por kg oferta']+ban['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {man['por kg oferta']+ban['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg naranja + 1kg banana + 1kg manzana = {nar['por kg oferta']+ban['por kg oferta']+man['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {nar['por kg oferta']+ban['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'orange'}}> 1kg naranja +  1kg frutilla + 1kg manzana = {nar['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg naranja</b> +  <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg manzana</b> = {nar['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg naranja +  1kg frutilla + 1kg banana = {nar['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> +  <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {nar['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'orange'}}> 1kg frutilla + 1kg banana + 1kg manzana = {ban['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {ban['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'yellowgreen'}}> 1kg frutilla + 1kg naranja + 1kg banana + 1kg manzana = {man['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']+nar['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {man['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']+nar['por kg oferta']} </div>
     </div>
     <br/><br/>
   </div>
