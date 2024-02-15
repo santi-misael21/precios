@@ -150,6 +150,8 @@ function App() {
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Ofertas de fruta
     <br/><br/>
+    <div style={{color: 'yellowgreen'}}> 1kg manzana + 1kg naranja = {man['por kg oferta']+nar['por kg oferta']} </div>
+    <br/><br/>
     <div style={{color: 'orange'}}> 1kg manzana + 1kg frutilla = {man['por kg oferta']+fru['por kg oferta']} </div>
     <br/><br/>
     <div style={{color: 'yellowgreen'}}> 1kg frutilla + 1kg banana = {fru['por kg oferta']+ban['por kg oferta']} </div>
