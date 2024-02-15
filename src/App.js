@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
     Lista de precios <br/>
+    Última actualización: 15 de febrero de 2024
  <br/>
     <br/> <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
       Papa
