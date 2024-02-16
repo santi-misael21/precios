@@ -175,6 +175,12 @@ function App() {
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{nar['por 2kg']}</div></div>
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{nar['por kg oferta']}</div></div>
   </div>
+<br/>
+<div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Durazno
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>$1200</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>$2100</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>$1050</div></div>
+  </div>
   <br/>
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Ofertas de fruta
