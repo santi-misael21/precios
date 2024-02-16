@@ -30,7 +30,7 @@ function App() {
     <div className="App" style={{backgroundColor: 'black'}}>
       <div style={{color:'gray'}}>
     Lista de precios <br/>
-    Última actualización: 15 de febrero de 2024
+    Última actualización: 16 de febrero de 2024
     <br/>
     Contacto:
     </div>
