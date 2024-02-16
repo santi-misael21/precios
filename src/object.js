@@ -57,25 +57,25 @@ export let object = {
         cajón: '(19kg) $37500',
         '1/2 cajón': '(9.5kg) $20000',
         '1/4 cajón': '(4.75kg) $10400',
-        'por kg': '$2200',
-        'por 2kg': '$4300',
-        'por kg oferta': 2150
+        'por kg': '$2000',
+        'por 2kg': '$3900',
+        'por kg oferta': 1950
     },
     Manzana: {
         cajón: '(9kg) $16500',
         '1/2 cajón': '(4.5kg) $8800',
         '1/4 cajón': '(2.25kg) $4600',
-        'por kg': '$2100',
-        'por 2kg': '$4100',
-        'por kg oferta': 2050
+        'por kg': '$1800',
+        'por 2kg': '$3500',
+        'por kg oferta': 1750
     },
     Naranja: {
         cajón: '(17kg) $15000',
         '1/2 cajón': '(8.5kg) $8000',
         '1/4 cajón': '(4.25kg) $4200',
-        'por kg': '$1000',
-        'por 2kg': '$1900',
-        'por kg oferta': 950
+        'por kg': '$800',
+        'por 2kg': '$1500',
+        'por kg oferta': 750
     },
     Frutilla: {
         cajón: '(4.5kg) $9000',
