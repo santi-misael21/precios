@@ -32,7 +32,7 @@ export default function Stores() {
             para comercios
             <br/>
             <br/>
-            Pedido mínimo: $20.000
+            {/* Pedido mínimo: $20.000 */}
             <br/>
             <br/>
             <div><u onClick={gotohome}>Hacer clic acá para pedidos menores</u></div>
