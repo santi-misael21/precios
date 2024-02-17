@@ -45,13 +45,13 @@ export let object = {
       'por kg oferta': 400
     },
     Acelga: {
-      'por atado': '$850',
+      'por atado': '$2000',
     },
     Perejil: {
-      'por atado': '$800',
+      'por atado': '$1500',
     },
     Verdeo: {
-      'por atado': '$1300',
+      'por atado': '$2000',//'$540500 (quinientos cuarenta mil quinientos pesos)',
     },
     Banana: {
         cajón: '(19kg) $37500',
