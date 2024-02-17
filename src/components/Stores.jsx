@@ -28,13 +28,18 @@ export default function Stores() {
     return (
     <div className="App" style={{backgroundColor: 'black'}}>
         <div style={{color:'rgb(160,160,160)'}}>
-            Lista de precios <br/>
-            para comercios
+            Lista de precios para comercios
             <br/>
             <br/>
-            Pedido mínimo: $20.000
+            Pedido mínimo: $15.000
             <br/>
             <br/>
+            Superando el monto de $30.000, se aplica un 5% de descuento
+            <br/>
+            <br/>
+            {/* Superando el monto de $40.000, permanece el 5% de descuento y el envío no tiene costo
+            <br/>
+            <br/> */}
             <div><u onClick={gotohome}>Hacer clic acá para pedidos menores</u></div>
             <br/>
             Contacto:
