@@ -28,7 +28,7 @@ export default function Stores() {
     return (
     <div className="App" style={{backgroundColor: 'black'}}>
         <div style={{color:'rgb(160,160,160)'}}>
-            Lista de precios mayorista
+            Lista de precios mayoristas
             <br/>
             <br/>
             Pedido mínimo: $15.000
