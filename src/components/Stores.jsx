@@ -198,27 +198,27 @@ export default function Stores() {
     <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
       Ofertas de fruta
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg manzana</b> + <b style={orange}>1kg naranja</b> = {man['por kg oferta']+nar['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg manzana</b> + <b style={orange}>1kg naranja</b> = {Math.ceil((man['por kg oferta']+nar['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg manzana</b> + <b style={yellowgreen}>1kg frutilla</b> = {man['por kg oferta']+fru['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg manzana</b> + <b style={yellowgreen}>1kg frutilla</b> = {Math.ceil((man['por kg oferta']+fru['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {fru['por kg oferta']+ban['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {Math.ceil((fru['por kg oferta']+ban['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg naranja</b> = {nar['por kg oferta']+fru['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg naranja</b> = {Math.ceil((nar['por kg oferta']+fru['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg banana</b> + <b style={orange}>1kg naranja</b> = {ban['por kg oferta']+nar['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg banana</b> + <b style={orange}>1kg naranja</b> = {Math.ceil((ban['por kg oferta']+nar['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {man['por kg oferta']+ban['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {Math.ceil((man['por kg oferta']+ban['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {nar['por kg oferta']+ban['por kg oferta']+man['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {Math.ceil((nar['por kg oferta']+ban['por kg oferta']+man['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg naranja</b> +  <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg manzana</b> = {nar['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg naranja</b> +  <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg manzana</b> = {Math.ceil((nar['por kg oferta']+fru['por kg oferta']+man['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> +  <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {nar['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> +  <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {Math.ceil((nar['por kg oferta']+fru['por kg oferta']+ban['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {ban['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {Math.ceil((ban['por kg oferta']+fru['por kg oferta']+man['por kg oferta'])/10)*10} </div>
       <br/><br/>
-      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {man['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']+nar['por kg oferta']} </div>
+      <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {Math.ceil((man['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']+nar['por kg oferta'])/10)*10} </div>
       </div>
       <br/><br/>
     </div>
