@@ -1,7 +1,9 @@
 import { objectStores } from "../stores/object";
 import whatsLogo from '../assets/WhatsApp.png';
+import { useNavigate } from "react-router-dom";
 
 export default function Stores() {
+    let navigate = useNavigate();
     let colour = (color) => {return {color}}
     let o = objectStores;
     let pot = o.Papa
@@ -22,15 +24,23 @@ export default function Stores() {
     // let orangered = colour('orangered')
     // let wheat = colour('wheat')
     let yellowgreen = colour('yellowgreen')
+    const gotohome = () => navigate('/')
     return (
-      <div className="App" style={{backgroundColor: 'black'}}>
-        <div style={{color:'gray'}}>
-      Lista de precios <br/>
-      <br/>
-      Contacto:
-      </div>
-      <br/>
-      <div>
+    <div className="App" style={{backgroundColor: 'black'}}>
+        <div style={{color:'rgb(160,160,160)'}}>
+            Lista de precios <br/>
+            para comercios
+            <br/>
+            <br/>
+            Pedido mínimo: $20.000
+            <br/>
+            <br/>
+            <div><u onClick={gotohome}>Hacer clic acá para pedidos menores</u></div>
+            <br/>
+            Contacto:
+        </div>
+    <br/>
+    <div>
                   {/* <div className='flex center'> */}
                       <a href='https://wa.me/+541158774985' title='Enviar un mensaje de WhatsApp' target='_blank' rel="noreferrer">
                           <img src={whatsLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
