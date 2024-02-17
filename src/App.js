@@ -1,10 +1,23 @@
 // import logo from './logo.svg';
-import whatsapp from './whatsappIcon.png';
+// import whatsapp from './whatsappIcon.png';
 import './App.css';
 import { object } from './object';
 import whatsLogo from './assets/WhatsApp.png';
-import faceLogo from './assets/Facebook.png';
-import instaLogo from './assets/Instagram.png';
+// import faceLogo from './assets/Facebook.png';
+// import instaLogo from './assets/Instagram.png';
+import { createBrowserRouter, useNavigate } from 'react-router-dom';
+import Stores from './components/Stores';
+
+export const router = createBrowserRouter([
+  {
+    path: '/almacenes',
+    element: <Stores/>
+  },
+  {
+    path: '/',
+    element: <App/>
+  },
+]);
 
 function App() {
   let colour = (color) => {return {color}}
@@ -20,11 +33,11 @@ function App() {
   let nar = o.Naranja
   let fru = o.Frutilla
   let lim = o.Limón
-  let red = colour('red')
+  // let red = colour('red')
   let orange = colour('orange')
-  let yellow = colour('yellow')
-  let orangered = colour('orangered')
-  let wheat = colour('wheat')
+  // let yellow = colour('yellow')
+  // let orangered = colour('orangered')
+  // let wheat = colour('wheat')
   let yellowgreen = colour('yellowgreen')
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
