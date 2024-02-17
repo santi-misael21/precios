@@ -10,7 +10,7 @@ import Stores from './components/Stores';
 
 export const router = createBrowserRouter([
   {
-    path: '/almacenes',
+    path: '/mayoristas',
     element: <Stores/>
   },
   {
