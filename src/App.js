@@ -33,6 +33,7 @@ function App() {
   let nar = o.Naranja
   let fru = o.Frutilla
   let lim = o.Limón
+  let dur = o.Durazno
   // let red = colour('red')
   let orange = colour('orange')
   // let yellow = colour('yellow')
@@ -190,9 +191,9 @@ function App() {
   </div>
 <br/>
 <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Durazno
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>$1200</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>$2100</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>$1050</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{dur['por kg']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{dur['por 2kg']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{dur['por kg oferta']}</div></div>
   </div>
   <br/>
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
@@ -200,11 +201,11 @@ function App() {
     <br/><br/>
     <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg manzana</b> + <b style={orange}>1kg naranja</b> = {man['por kg oferta']+nar['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg manzana</b> + <b style={yellowgreen}>1kg frutilla</b> = {man['por kg oferta']+fru['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg manzana</b> + <b style={yellowgreen}>1kg durazno</b> = {man['por kg oferta']+dur['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {fru['por kg oferta']+ban['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg durazno</b> + <b style={orange}>1kg banana</b> = {dur['por kg oferta']+ban['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg naranja</b> = {nar['por kg oferta']+fru['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg durazno</b> + <b style={yellowgreen}>1kg naranja</b> = {nar['por kg oferta']+dur['por kg oferta']} </div>
     <br/><br/>
     <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg banana</b> + <b style={orange}>1kg naranja</b> = {ban['por kg oferta']+nar['por kg oferta']} </div>
     <br/><br/>
@@ -212,13 +213,13 @@ function App() {
     <br/><br/>
     <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {nar['por kg oferta']+ban['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg naranja</b> +  <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg manzana</b> = {nar['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg naranja</b> +  <b style={yellowgreen}>1kg durazno</b> + <b style={yellowgreen}>1kg manzana</b> = {nar['por kg oferta']+dur['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> +  <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg banana</b> = {nar['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg naranja</b> +  <b style={orange}>1kg durazno</b> + <b style={orange}>1kg banana</b> = {nar['por kg oferta']+dur['por kg oferta']+ban['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg frutilla</b> + <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {ban['por kg oferta']+fru['por kg oferta']+man['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={yellowgreen}>1kg durazno</b> + <b style={yellowgreen}>1kg banana</b> + <b style={yellowgreen}>1kg manzana</b> = {ban['por kg oferta']+dur['por kg oferta']+man['por kg oferta']} </div>
     <br/><br/>
-    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg frutilla</b> + <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {man['por kg oferta']+fru['por kg oferta']+ban['por kg oferta']+nar['por kg oferta']} </div>
+    <div style={{color: 'white', backgroundColor: 'rgb(50,50,50,0.5)'}}> <b style={orange}>1kg durazno</b> + <b style={orange}>1kg naranja</b> + <b style={orange}>1kg banana</b> + <b style={orange}>1kg manzana</b> = {man['por kg oferta']+dur['por kg oferta']+ban['por kg oferta']+nar['por kg oferta']} </div>
     </div>
     <br/><br/>
   </div>

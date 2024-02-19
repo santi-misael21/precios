@@ -53,45 +53,52 @@ export let object = {
   Verdeo: {
     'por atado': '$2000',
     // '$540500 (quinientos cuarenta mil quinientos pesos)',
+  },Banana: {
+    bolsa: '(19kg) $24800',
+    '1/2 bolsa': '(9.5kg) $12800',
+    '1/4 bolsa': '(4.75kg) $6600',
+    'por kg': '$1500',
+    'por 2kg': '$2800',
+    'por kg oferta': 1400
   },
-    Banana: {
-        cajón: '(19kg) $37500',
-        '1/2 cajón': '(9.5kg) $20000',
-        '1/4 cajón': '(4.75kg) $10400',
-        'por kg': '$2000',
-        'por 2kg': '$3900',
-        'por kg oferta': 1950
-    },
-    Manzana: {
-        cajón: '(9kg) $16500',
-        '1/2 cajón': '(4.5kg) $8800',
-        '1/4 cajón': '(2.25kg) $4600',
-        'por kg': '$1800',
-        'por 2kg': '$3500',
-        'por kg oferta': 1750
-    },
-    Naranja: {
-        cajón: '(17kg) $15000',
-        '1/2 cajón': '(8.5kg) $8000',
-        '1/4 cajón': '(4.25kg) $4200',
-        'por kg': '$800',
-        'por 2kg': '$1500',
-        'por kg oferta': 750
-    },
-    Frutilla: {
-        cajón: '(4.5kg) $9000',
-        '1/2 cajón': '(2.25kg) $4800',
-        '1/4 cajón': '(1.125kg) $2500',
-        'por kg': '$2200',
-        'por 2kg': '$4300',
-        'por kg oferta': 2150
-    },
-    'Limón': {
-        cajón: '(7kg) $7500',
-        '1/2 cajón': '(3.5kg) $4000',
-        '1/4 cajón': '(1.75kg) $2100',
-        'por kg': '$1250',
-        'por 2kg': '$2400',
-        'por kg oferta': 1200
-    }
+  Manzana: {
+    bolsa: '(17kg) $23250',
+    '1/2 bolsa': '(8.5kg) $12000',
+    '1/4 bolsa': '(4.25kg) $6190',
+    'por kg': '$1500',
+    'por 2kg': '$2900',
+    'por kg oferta': 1450
+  },
+  Naranja: {
+    bolsa: '(17kg) $10080',
+    '1/2 bolsa': '(8.5kg) $5200',
+    '1/4 bolsa': '(4.25kg) $2690',
+    'por kg': '$650',
+    'por 2kg': '$1200',
+    'por kg oferta': 600
+  },
+  Frutilla: {
+    bolsa: '(4.5kg) $10850',
+    '1/2 bolsa': '(2.25kg) $5600',
+    '1/4 bolsa': '(1.125kg) $2890',
+    'por kg': '$2600',
+    'por 2kg': '$5100',
+    'por kg oferta': 2550
+  },
+  Durazno: {
+    bolsa: '(12kg) $12400',
+    '1/2 bolsa': '(6kg) $6400',
+    '1/4 bolsa': '(3kg) $3300',
+    'por kg': '$1150',
+    'por 2kg': '$2200',
+    'por kg oferta': 1100
+  },
+  'Limón': {
+    bolsa: '(7kg) $7750',
+    '1/2 bolsa': '(3.5kg) $4000',
+    '1/4 bolsa': '(1.75kg) $2070',
+    'por kg': '$1200',
+    'por 2kg': '$2300',
+    'por kg oferta': 1150
+  }
 }
