@@ -57,9 +57,9 @@ export let object = {
     bolsa: '(19kg) $24800',
     '1/2 bolsa': '(9.5kg) $12800',
     '1/4 bolsa': '(4.75kg) $6600',
-    'por kg': '$1500',
-    'por 2kg': '$2800',
-    'por kg oferta': 1400
+    'por kg': '$1300',
+    'por 2kg': '$2500',
+    'por kg oferta': 1250
   },
   Manzana: {
     bolsa: '(17kg) $23250',
