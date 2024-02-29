@@ -8,12 +8,12 @@ export let object = {
     'por kg oferta': 575
   },
   Batata: {
-    bolsa: '(12kg) $6000',
-    '1/2 bolsa': '(6kg) $3200',
-    '1/4 bolsa': '(3kg) $1700',
-    'por kg': '$600',
-    'por 2kg': '$1150',
-    'por kg oferta': 575
+    bolsa: '(12kg) $7000',
+    '1/2 bolsa': '(6kg) $3600',
+    '1/4 bolsa': '(3kg) $1900',
+    'por kg': '$650',
+    'por 2kg': '$1200',
+    'por kg oferta': 600
   },
   Cebolla: {
     bolsa: '(17kg) $11300',
