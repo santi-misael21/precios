@@ -143,7 +143,7 @@ function App() {
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{zan['por kg']}</div></div>
     {/* Agregar <input type='checkbox' value='Zanahoria' name='por kg' onClick={(e)=>additem(e.target.name)}/> */}
     {/* <br/><br/> */}
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zan['por 2kg']}</div></div>
+    {/* <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zan['por 2kg']}</div></div> */}
     {/* Agregar <input type='checkbox' value='Zanahoria' name='por 2kg' onClick={(e)=>additem(e.target.name)}/> */}
     {/* <br/><br/> */}
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{zan['por kg oferta']}</div></div>
