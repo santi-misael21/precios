@@ -39,6 +39,9 @@ export let object = {
     'por kg oferta': 600
   },
   'Tomate perita': {
+    bolsa: '(17kg) $6000',
+    '1/2 bolsa': '(8.5kg) $3200',
+    '1/4 bolsa': '(4.25kg) $2500',
     'por kg': '$450',
     'por 2kg': '$800',
     'por kg oferta': 400
