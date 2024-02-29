@@ -1,11 +1,11 @@
 export let object = {
   Papa: {
-    bolsa: '(17kg) $11300',
-    '1/2 bolsa': '(8.5kg) $6000',
-    '1/4 bolsa': '(4.25kg) $3100',
-    'por kg': '$750',
-    'por 2kg': '$1450',
-    'por kg oferta': 725
+    bolsa: '(17kg) $9000',
+    '1/2 bolsa': '(8.5kg) $4600',
+    '1/4 bolsa': '(4.25kg) $2400',
+    'por kg': '$600',
+    'por 2kg': '$1150',
+    'por kg oferta': 575
   },
   Batata: {
     bolsa: '(12kg) $6000',
@@ -24,12 +24,12 @@ export let object = {
     'por kg oferta': 725
   },
   Zanahoria: {
-    bolsa: '(9kg) $5700',
-    '1/2 bolsa': '(4.5kg) $3000',
-    '1/4 bolsa': '(2.25kg) $1600',
-    'por kg': '$750',
-    'por 2kg': '$1450',
-    'por kg oferta': 725
+    bolsa: '(9kg) $9000',
+    '1/2 bolsa': '(4.5kg) $4600',
+    '1/4 bolsa': '(2.25kg) $2400',
+    'por kg': '$700',
+    'por 2kg': '$1350',
+    'por kg oferta': 675
   },
   Anco: {
     bolsa: '(13kg) $6800',
@@ -57,17 +57,17 @@ export let object = {
     bolsa: '(19kg) $24800',
     '1/2 bolsa': '(9.5kg) $12800',
     '1/4 bolsa': '(4.75kg) $6600',
-    'por kg': '$1300',
-    'por 2kg': '$2500',
-    'por kg oferta': 1250
+    'por kg': '$1800',
+    'por 2kg': '$3500',
+    'por kg oferta': 1750
   },
   Manzana: {
     bolsa: '(17kg) $23250',
     '1/2 bolsa': '(8.5kg) $12000',
     '1/4 bolsa': '(4.25kg) $6190',
-    'por kg': '$1500',
-    'por 2kg': '$2900',
-    'por kg oferta': 1450
+    'por kg': '$1800',
+    'por 2kg': '$3500',
+    'por kg oferta': 1750
   },
   Naranja: {
     bolsa: '(17kg) $10080',
@@ -81,15 +81,15 @@ export let object = {
     bolsa: '(4.5kg) $10850',
     '1/2 bolsa': '(2.25kg) $5600',
     '1/4 bolsa': '(1.125kg) $2890',
-    'por kg': '$2600',
-    'por 2kg': '$5100',
-    'por kg oferta': 2550
+    'por kg': '$2500',
+    'por 2kg': '$4800',
+    'por kg oferta': 2400
   },
   Durazno: {
     bolsa: '(12kg) $12400',
     '1/2 bolsa': '(6kg) $6400',
     '1/4 bolsa': '(3kg) $3300',
-    'por kg': '$1150',
+    'por kg': '$1200',
     'por 2kg': '$2200',
     'por kg oferta': 1100
   },

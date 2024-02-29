@@ -40,6 +40,7 @@ function App() {
   // let orangered = colour('orangered')
   // let wheat = colour('wheat')
   let yellowgreen = colour('yellowgreen')
+  const additem = (a) => console.log({a}) 
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
       <div style={{color:'gray'}}>
@@ -65,7 +66,7 @@ function App() {
                 {/* </div> */}
       {/* <img src={whatsapp} href='' style={{width: '50px', borderRadius: '8px'}}/> */}
     </div>
-    {/* <br/> <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
+    <br/> <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
       Papa
     <div style={{display: 'flex', justifyContent: 'space-between'}}>
       
@@ -97,55 +98,55 @@ function App() {
       <div>por kg oferta </div>
       <div>{pot['por kg oferta']}</div> </div>
 
-   <br/></div> */}
+   <br/></div>
    <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'pink', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Batata
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{bat.bolsa}</div> </div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div><div>{bat['1/2 bolsa']}</div> </div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div><div>{bat['1/4 bolsa']}</div> </div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div><div>{bat['por kg']}</div> </div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div><div>{bat['por 2kg']}</div> </div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div><div>{bat['por kg oferta']}</div> </div>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{bat.bolsa}</div> </div>Agregar <input type='checkbox' value='Batata' name='bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div><div>{bat['1/2 bolsa']}</div> </div>Agregar <input type='checkbox' value='Batata' name='1/2 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div><div>{bat['1/4 bolsa']}</div> </div>Agregar <input type='checkbox' value='Batata' name='1/4 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div><div>{bat['por kg']}</div> </div>Agregar <input type='checkbox' value='Batata' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div><div>{bat['por 2kg']}</div> </div>Agregar <input type='checkbox' value='Batata' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div><div>{bat['por kg oferta']}</div> </div>Agregar <input type='checkbox' value='Batata' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   <br/></div>
   <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Cebolla
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{ceb.bolsa}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div><div>{ceb['1/2 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div><div>{ceb['1/4 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div><div>{ceb['por kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div><div>{ceb['por 2kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div><div>{ceb['por kg oferta']}</div></div>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{ceb.bolsa}</div></div>Agregar <input type='checkbox' value='Cebolla' name='bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div><div>{ceb['1/2 bolsa']}</div></div>Agregar <input type='checkbox' value='Cebolla' name='1/2 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div><div>{ceb['1/4 bolsa']}</div></div>Agregar <input type='checkbox' value='Cebolla' name='1/4 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div><div>{ceb['por kg']}</div></div>Agregar <input type='checkbox' value='Cebolla' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div><div>{ceb['por 2kg']}</div></div>Agregar <input type='checkbox' value='Cebolla' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div><div>{ceb['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Cebolla' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   <br/></div>
-  {/* <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'orangered', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
+  <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'orangered', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Zanahoria
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div> <div>{zan.bolsa}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div> <div>{zan['1/2 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div> <div>{zan['1/4 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{zan['por kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zan['por 2kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{zan['por kg oferta']}</div></div>
-  <br/></div> */}
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div> <div>{zan.bolsa}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='bolsa' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div> <div>{zan['1/2 bolsa']}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='1/2 bolsa' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div> <div>{zan['1/4 bolsa']}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='1/4 bolsa' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{zan['por kg']}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='por kg' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zan['por 2kg']}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='por 2kg' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{zan['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Zanahoria' name='por kg oferta' onClick={(e)=>additem(e.target.name)}/><br/><br/>
+  <br/></div>
   <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'orange', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Anco
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div> <div>{zap.bolsa}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div> <div>{zap['1/2 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div> <div>{zap['1/4 bolsa']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{zap['por kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zap['por 2kg']}</div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{zap['por kg oferta']}</div></div>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div> <div>{zap.bolsa}</div></div>Agregar <input type='checkbox' value='Anco' name='bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div> <div>{zap['1/2 bolsa']}</div></div>Agregar <input type='checkbox' value='Anco' name='1/2 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 bolsa </div> <div>{zap['1/4 bolsa']}</div></div>Agregar <input type='checkbox' value='Anco' name='1/4 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{zap['por kg']}</div></div>Agregar <input type='checkbox' value='Anco' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{zap['por 2kg']}</div></div>Agregar <input type='checkbox' value='Anco' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{zap['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Anco' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   <br/></div>
   <br/>  
-  {/* <div style={{display: 'block', width: '200px', margin: 'auto', color: 'red', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
-    Tomate perita */}
-    {/* <div style={{display: 'flex', justifyContent: 'space-between'}}><div>cajón </div> <div> {tom.bolsa} </div></div>
+  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'red', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
+    Tomate perita
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>cajón </div> <div> {tom.bolsa} </div></div>
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 cajón </div> <div> {tom['1/2 bolsa']} </div></div>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 cajón </div> <div> {tom['1/4 bolsa']} </div></div> */}
-    {/* <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div> {tom['por kg']} </div></div>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/4 cajón </div> <div> {tom['1/4 bolsa']} </div></div>
+    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div> {tom['por kg']} </div></div>
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div> {tom['por 2kg']} </div></div>
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div> {tom['por kg oferta']} </div></div>
-  </div> */}
+  </div>
   <br/>  
-  {/* <div style={{display: 'block', width: '200px', margin: 'auto', color: 'green', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
+  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'green', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Acelga
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>atado </div> <div>{o.Acelga['por atado']}</div></div>
   </div>
@@ -159,41 +160,41 @@ function App() {
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'white', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Verdeo
     <div style={{display: 'flex', justifyContent: 'space-between'}}><div>atado </div> <div>{o.Verdeo['por atado']}</div></div>
   </div>
-  <br/> */}
+  <br/>
 <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Banana
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{ban['por kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{ban['por 2kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{ban['por kg oferta']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{ban['por kg']}</div></div>Agregar <input type='checkbox' value='Batata' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{ban['por 2kg']}</div></div>Agregar <input type='checkbox' value='Batata' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{ban['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Batata' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   </div>
 <br/>
-{/* <div style={{display: 'block', width: '200px', margin: 'auto', color: 'red', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Frutilla
+<div style={{display: 'block', width: '200px', margin: 'auto', color: 'red', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Frutilla
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{fru['por kg']}</div></div>
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{fru['por 2kg']}</div></div>
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{fru['por kg oferta']}</div></div>
   </div>
-<br/> */}
-{/* <div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellowgreen', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Limón
+<br/>
+<div style={{display: 'block', width: '200px', margin: 'auto', color: 'yellowgreen', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Limón
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg $</div> <div>{lim['por kg']} </div></div>
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg $</div> <div>{lim['por 2kg']}</div></div>
   <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta $</div> <div>{lim['por kg oferta']} </div></div>
-  </div> */}
+  </div>
 <br/>
 <div style={{display: 'block', width: '200px', margin: 'auto', color: 'red', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Manzana
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{man['por kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{man['por 2kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{man['por kg oferta']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{man['por kg']}</div></div>Agregar <input type='checkbox' value='Manzana' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{man['por 2kg']}</div></div>Agregar <input type='checkbox' value='Manzana' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{man['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Manzana' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   </div>
 <br/>
 <div style={{display: 'block', width: '200px', margin: 'auto',  color: 'orange', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Naranja
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{nar['por kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{nar['por 2kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{nar['por kg oferta']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{nar['por kg']}</div></div>Agregar <input type='checkbox' value='Naranja' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{nar['por 2kg']}</div></div>Agregar <input type='checkbox' value='Naranja' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{nar['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Naranja' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   </div>
 <br/>
 <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>Durazno
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{dur['por kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{dur['por 2kg']}</div></div>
-  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{dur['por kg oferta']}</div></div>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg </div> <div>{dur['por kg']}</div></div>Agregar <input type='checkbox' value='Durazno' name='por kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por 2kg </div> <div>{dur['por 2kg']}</div></div>Agregar <input type='checkbox' value='Durazno' name='por 2kg' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}><div>por kg oferta </div> <div>{dur['por kg oferta']}</div></div>Agregar <input type='checkbox' value='Durazno' name='por kg oferta' onClick={(e)=>additem({[e.target.value] :e.target.name})}/><br/><br/>
   </div>
   <br/>
   <div style={{display: 'block', width: '200px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
