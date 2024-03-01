@@ -78,7 +78,7 @@ export let object = {
     '1/4 bolsa': '(4.25kg) $2690',
     'por kg': '$850',
     'por 2kg': '$1600',
-    'por 2kg': '$2100',
+    'por 3kg': '$2100',
     'por kg oferta': 700
   },
   Frutilla: {
