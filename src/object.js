@@ -60,7 +60,7 @@ export let object = {
     '1/2 bolsa': '(9.5kg) $12800',
     '1/4 bolsa': '(4.75kg) $6600',
     'por kg': '$1800',
-    'por 2kg': '$3500',
+    'por 2kg': 3500,
     'por 3kg': '$4500',
     'por kg oferta': 1500
   },
@@ -69,7 +69,7 @@ export let object = {
     '1/2 bolsa': '(8.5kg) $12000',
     '1/4 bolsa': '(4.25kg) $6190',
     'por kg': '$1800',
-    'por 2kg': '$3500',
+    'por 2kg': 3500,
     'por kg oferta': 1750
   },
   Naranja: {
@@ -77,7 +77,7 @@ export let object = {
     '1/2 bolsa': '(8.5kg) $5200',
     '1/4 bolsa': '(4.25kg) $2690',
     'por kg': '$850',
-    'por 2kg': '$1600',
+    'por 2kg': 1600,
     'por 3kg': '$2100',
     'por kg oferta': 700
   },
@@ -86,7 +86,7 @@ export let object = {
     '1/2 bolsa': '(2.25kg) $5600',
     '1/4 bolsa': '(1.125kg) $2890',
     'por kg': '$2500',
-    'por 2kg': '$4800',
+    'por 2kg': 4800,
     'por kg oferta': 2400
   },
   Durazno: {
@@ -94,7 +94,7 @@ export let object = {
     '1/2 bolsa': '(6kg) $6400',
     '1/4 bolsa': '(3kg) $3300',
     'por kg': '$1200',
-    'por 2kg': '$2200',
+    'por 2kg': 2200,
     'por 3kg': '$3000',
     'por kg oferta': 1000
   },
@@ -103,7 +103,7 @@ export let object = {
     '1/2 bolsa': '(3.5kg) $4000',
     '1/4 bolsa': '(1.75kg) $2070',
     'por kg': '$850',
-    'por 2kg': '$1600',
+    'por 2kg': 1600,
     'por 3kg': '$2100',
     'por kg oferta': 700
   }
