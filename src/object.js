@@ -53,10 +53,10 @@ export let object = {
     color: 'red',
   },
   'Huevos N° 1': {
-    'Maple': '$4200',
-    '2 maples': '$8000',
-    '4 maples': '$15000',
-    'precio por maple llevando 4': '$3750',
+    'Maple': '$4000',
+    '2 maples': '$7600',
+    '4 maples': '$14000',
+    'precio por maple llevando 4': '$3500',
   },
   'Aceite suelto Natura': {
     '1 Litro': '$1600'
