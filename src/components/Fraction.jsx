@@ -26,7 +26,7 @@ export default function Fraction ({object, product, fraction}) {
                 justifyContent: 'space-between'
             }}> 
                 <div> {fraction} </div> 
-                <div>{object[fraction]}</div> 
+                <div>{fraction === 'por 2kg' && '$'}{object[fraction]}</div> 
             </div> 
             {/* {
             <div>{fraction !== 'por kg oferta' ?

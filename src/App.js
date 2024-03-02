@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
 function App() {
   let colour = (color) => {return {color}}
   let o = object;
-  // let pot = o.Papa
+  let pot = o.Papa
   // let bat = o.Batata
   // let ceb = o.Cebolla
   // let zan = o.Zanahoria
@@ -72,6 +72,18 @@ function App() {
     {variables.map((v,i)=> //console.log(v['prod'])
        <div key={i}> <Product product={v['prod']} color={v['color']} /> <br/></div>
       )}
+  <div style={{display: 'block', width: '220px', margin: 'auto', color: 'yellow', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
+      <div style={{display:'flex' , justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', margin: 'auto'}}>Huevos N° 1</div>
+        {/* <div style={{fontSize:'9px', marginRight: '7px'}}>Agregar ↓</div> */}
+      </div>
+      <div className='input' style={{display: 'flex', justifyContent: 'space-between', margin: '4px auto', cursor: 'pointer', borderRadius: '5px', padding: '2px auto'}}><div style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}> <div>Maple </div> <div>$4200</div> </div> {/*<div ><input type='checkbox' style={{cursor: 'pointer'}}/> </div>*/}</div>
+      <div className='input' style={{display: 'flex', justifyContent: 'space-between', margin: '4px auto', cursor: 'pointer', borderRadius: '5px', padding: '2px auto'}}><div style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}> <div>2 maples </div> <div>$8000</div> </div> {/*<div ><input type='checkbox' style={{cursor: 'pointer'}}/> </div>*/}</div>
+      <div className='input' style={{display: 'flex', justifyContent: 'space-between', margin: '4px auto', cursor: 'pointer', borderRadius: '5px', padding: '2px auto'}}><div style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}> <div>4 maples </div> <div>$15000</div> </div> {/*<div ><input type='checkbox' style={{cursor: 'pointer'}}/> </div>*/}</div>
+      {/* <div className='input' style={{display: 'flex', justifyContent: 'space-between', margin: '4px auto', cursor: 'pointer', borderRadius: '5px', padding: '2px auto'}}><div style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}> <div>por kg </div> <div>{pot['por kg']}</div> </div> <div ><input type='checkbox' style={{cursor: 'pointer'}}/> </div></div>
+      <div className='input' style={{display: 'flex', justifyContent: 'space-between', margin: '4px auto', cursor: 'pointer', borderRadius: '5px', padding: '2px auto'}}><div style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}> <div>por 2kg </div> <div>{pot['por 2kg']}</div> </div> <div ><input type='checkbox' style={{cursor: 'pointer'}}/> </div></div> */}
+      <div style={{display: 'flex', justifyContent: 'space-between', backgroundColor: 'rgba(100,100,100,0.2)', margin: '5px -5px', padding: '0px 5px', borderRadius: '5px'}}><div style={{width: '70%', textAlign: 'left'}}><b>precio por maple llevando 4</b> </div> <div style={{display: 'flex', margin: 'auto 0px auto auto '}}>$3750</div></div>
+  <br/></div>
   <br/>
   <div style={{display: 'block', width: '220px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Ofertas de fruta
