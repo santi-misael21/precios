@@ -8,9 +8,9 @@ export default function Product ({product, color}) {
                 <div style={{display: 'flex', margin: 'auto'}}>
                     {product}
                 </div>
-                <div style={{fontSize:'9px', marginRight: '7px'}}>
+                {/* <div style={{fontSize:'9px', marginRight: '7px'}}>
                     Agregar ↓
-                </div>
+                </div> */}
             </div>
             {Object.keys(object[product]).map((o,i) => o !== 'color' && <Fraction 
                 key={i} 
