@@ -5,7 +5,6 @@ export let object = {
     '1/4 bolsa': '(4.25kg) $2300',
     'por kg': '$600',
     'por 2kg': 1100,
-    'por 3kg': '$1650',
     'por kg llevando 1 bolsa': '$480',
     color: 'yellow',
   },
@@ -122,11 +121,10 @@ export let object = {
   'Limón': {
     // bolsa: '(16kg) $7750',
     // '1/2 bolsa': '(8kg) $2800',
-    '1/4 cajón': '(4kg) $3800',
-    'por kg': '$1150',
-    'por 2kg': 2100,
-    'por 3kg': '$3000',
-    'por kg llevando 3kg': '$1000',
+    '1/4 cajón': '(4kg) $3000',
+    'por kg': '$850',
+    'por 2kg': 1600,
+    'por kg llevando 2kg': '$800',
     color: 'greenyellow',
   },
 }
