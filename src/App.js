@@ -100,8 +100,8 @@ function App() {
 
    <br/></div>
    {/* <br/>  <div style={{display: 'block', width: '200px', margin: 'auto', color: 'pink', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}> */}
-    Batata
-    <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{bat.bolsa}</div> </div>
+    {/* Batata */}
+    {/* <div style={{display: 'flex', justifyContent: 'space-between'}}><div>bolsa </div><div>{bat.bolsa}</div> </div> */}
     {/* Agregar <input type='checkbox' value='Batata' name='bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/> <br/><br/> */}
     {/* <div style={{display: 'flex', justifyContent: 'space-between'}}><div>1/2 bolsa </div><div>{bat['1/2 bolsa']}</div> </div> */}
     {/* Agregar <input type='checkbox' value='Batata' name='1/2 bolsa' onClick={(e)=>additem({[e.target.value] :e.target.name})}/> <br/><br/> */}
