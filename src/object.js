@@ -60,7 +60,10 @@ export let object = {
   },
   'Aceite suelto Natura': {
     '1 Litro': '$1600'
-  } ,
+  },
+  'Harina de Trigo Leudante': {
+    'Marolio 1kg': '$600'
+  },
   // Acelga: {
   //   'por atado': '$2000',
   // },
