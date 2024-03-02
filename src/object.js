@@ -1,11 +1,12 @@
 export let object = {
   Papa: {
-    bolsa: '(17kg) $9000',
-    '1/2 bolsa': '(8.5kg) $4600',
-    '1/4 bolsa': '(4.25kg) $2400',
+    bolsa: '(17kg) $8200',
+    '1/2 bolsa': '(8.5kg) $4400',
+    '1/4 bolsa': '(4.25kg) $2300',
     'por kg': '$600',
-    'por 2kg': '$1150',
-    'por kg oferta': 575
+    'por 2kg': '$1100',
+    'por 3kg': '$1650',
+    'por kg oferta': 550
   },
   Batata: {
     bolsa: '(12kg) $7000',
@@ -16,12 +17,12 @@ export let object = {
     'por kg oferta': 600
   },
   Cebolla: {
-    bolsa: '(17kg) $10000',
-    '1/2 bolsa': '(8.5kg) $5400',
-    '1/4 bolsa': '(4.25kg) $2800',
+    bolsa: '(17kg) $10500',
+    '1/2 bolsa': '(8.5kg) $5600',
+    '1/4 bolsa': '(4.25kg) $2900',
     'por kg': '$750',
-    'por 2kg': '$1450',
-    'por kg oferta': 725
+    'por 2kg': '$1400',
+    'por kg oferta': 700
   },
   Zanahoria: {
     bolsa: '(9kg) $9000',
