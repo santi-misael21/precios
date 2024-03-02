@@ -100,12 +100,12 @@ export let object = {
     'por kg oferta': 1200
   },
   'Limón': {
-    bolsa: '(7kg) $7750',
-    '1/2 bolsa': '(3.5kg) $4000',
-    '1/4 bolsa': '(1.75kg) $2070',
-    'por kg': '$850',
-    'por 2kg': 1600,
-    'por 3kg': '$2100',
-    'por kg oferta': 700
+    bolsa: '(16kg) $7750',
+    '1/2 bolsa': '(8kg) $2800',
+    '1/4 bolsa': '(4kg) $3600',
+    'por kg': '$1150',
+    'por 2kg': 2100,
+    'por 3kg': '$3000',
+    'por kg oferta': 1000
   }
 }
