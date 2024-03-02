@@ -57,12 +57,15 @@ export let object = {
     '2 maples': '$7600',
     '4 maples': '$14000',
     'precio por maple llevando 4': '$3500',
+    color: 'pink'
   },
   'Aceite suelto Natura': {
-    '1 Litro': '$1600'
+    '1 Litro': '$1600',
+    color: 'goldenrod',
   },
   'Harina de Trigo Leudante': {
-    'Marolio 1kg': '$600'
+    'Marolio 1kg': '$600',
+    'color': 'burlywood',
   },
   // Acelga: {
   //   'por atado': '$2000',
