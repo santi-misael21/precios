@@ -53,6 +53,9 @@ export let object = {
     'por kg llevando 3kg': '$500',
     color: 'red',
   },
+  'Aceite suelto Natura': {
+    '1 Litro': '$1600'
+  } ,
   // Acelga: {
   //   'por atado': '$2000',
   // },
@@ -119,5 +122,11 @@ export let object = {
     'por 3kg': '$3000',
     'por kg llevando 3kg': '$1000',
     color: 'greenyellow',
-  }
+  },
+  // 'Huevos N° 1': {
+  //   'Maple': '$4200',
+  //   '2 maples': '$8000',
+  //   '4 maples': '$15000',
+  //   'precio por maple llevando 4': '$3750',
+  // }
 }
