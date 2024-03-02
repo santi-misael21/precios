@@ -4,8 +4,8 @@ export default function Fraction ({object, product, fraction}) {
     // console.log({product, fraction, tf: typeof fraction, tp: typeof product})
 
     let [input, setInput] = useState(false); 
-    let [title, setTitle] = useState(null); console.log({title})
-    let [value, setValue] = useState(null); console.log({value, title, input})
+    let [title, setTitle] = useState(null); //console.log({title})
+    let [value, setValue] = useState(null); //console.log({value, title, input})
 
     return (
         <div 
