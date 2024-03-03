@@ -1,8 +1,8 @@
 export let object = {
   Papa: {
-    bolsa: '(17kg) $8000',
-    '1/2 bolsa': '(8.5kg) $4400',
-    '1/4 bolsa': '(4.25kg) $2300',
+    'bolsa (17kg)': '$8000',
+    '1/2 bolsa (8.5kg)': '$4400',
+    '1/4 bolsa (4.25kg)': '$2300',
     'por kg': '$600',
     'por 2kg': 1100,
     'por kg llevando 1 bolsa': '$480',
@@ -18,9 +18,9 @@ export let object = {
   //   color: 'violet',
   // },
   Cebolla: {
-    bolsa: '(17kg) $10000',
-    '1/2 bolsa': '(8.5kg) $5600',
-    '1/4 bolsa': '(4.25kg) $2900',
+    'bolsa (17kg)': '$10000',
+    '1/2 bolsa (8.5kg)': '$5600',
+    '1/4 bolsa (4.25kg)': '$2900',
     'por kg': '$750',
     'por 2kg': 1400,
     'por kg llevando 1 bolsa': '$590',
@@ -44,8 +44,8 @@ export let object = {
   },
   'Tomate perita': {
     // bolsa: '(17kg) $7500',
-    '1/2 cajón': '(8.5kg) $4000',
-    '1/4 cajón': '(4.25kg) $2100',
+    '1/2 cajón (8.5kg)': '$4000',
+    '1/4 cajón (4.25kg)': '$2100',
     'por kg': '$550',
     'por 2kg': 1050,
     'por 3kg': '$1500',
@@ -67,6 +67,10 @@ export let object = {
     'Marolio 1kg': '$600',
     'color': 'burlywood',
   },
+  Azúcar: {
+    'Salvador 1kg': '$1500',
+    color: 'white'
+  },
   // Acelga: {
   //   'por atado': '$2000',
   // },
@@ -80,7 +84,7 @@ export let object = {
   Banana: {
     // bolsa: '(19kg) $sin precio',
     // '1/2 bolsa': '(9.5kg) $sin precio',
-    '1/4 cajón': '(4.75kg) $7000',
+    '1/4 cajón (4.75kg)': '$7000',
     'por kg': '$1800',
     'por 2kg': 3500,
     'por 3kg': '$4500',
@@ -117,7 +121,7 @@ export let object = {
   Durazno: {
     // bolsa: '(12kg) $sin precio',
     // '1/2 bolsa': '(6kg) $sin precio',
-    '1/4 cajón': '(3kg) $3600',
+    '1/4 cajón (3kg)': '$3600',
     'por kg': '$1500',
     'por 2kg': 2500,
     'por 3kg': '$3600',
@@ -127,7 +131,7 @@ export let object = {
   'Limón': {
     // bolsa: '(16kg) $7750',
     // '1/2 bolsa': '(8kg) $2800',
-    '1/4 cajón': '(4kg) $3000',
+    '1/4 cajón (4kg)': '$3000',
     'por kg': '$850',
     'por 2kg': 1600,
     'por kg llevando 2kg': '$800',
