@@ -73,7 +73,7 @@ export default function Fraction ({object, product, fraction, i, ip, price, pric
                     justifyContent: 'space-between'
                 }}> 
                     <div id={String(ip)+String(i)}> </div> 
-                    <div>{fraction === 'por 2kg' && '$'}{object[fraction]}</div> 
+                    <div>{fraction === 'Por 2kg' && '$'}{object[fraction]}</div> 
                 </div> 
                 { !fraction.includes('llevando') && 
                 <div style={{display: 'flex'}}>{

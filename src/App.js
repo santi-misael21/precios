@@ -27,6 +27,7 @@ export const router = createBrowserRouter([
 function App() {
   let list = useSelector(state => state.list); console.log({list})
   let [show, setShow] = useState(true);
+  let [help, setHelp] = useState(false);
 
   let colour = (color) => {return {color}}
   let o = object;
@@ -105,51 +106,71 @@ function App() {
           <b style={{width: '20%', paddingRight: '2px'}}>Precio</b>
         </div>
         }
-      { show &&
-      list && list.all && list.all.map(
-        (item,u) => <List key={u} item={item} />)
-        }
-      {list && list.all && !!list.all.length && 
-      <div style={{
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        backgroundColor: 'black',
-        padding: '4px 6px',
-        color: 'white',
-        margin: 'auto -4px',
-        border: '1px solid white'
-      }}>
-        <b>Total</b>
-        <b>
-          {sumaIds}
-        </b>
-      </div>}
-      {list && list.all && !!list.all.length && 
-      <div style={{
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        backgroundColor: 'black',
-        padding: '4px 6px',
-        color: 'white',
-        margin: 'auto -4px',
-        border: '1px solid white'
-      }}>
-        <a 
-          href={`https://wa.me/+541158774985?text=${msg}`}
-          title='Continuar con WhatsApp' 
-          target='_blank' 
-          rel="noreferrer"
-        >
-          <button 
-            style={{width: '100%', height: '100%', padding: '5px auto'}} 
-            onClick={()=>{}}>
-            <b>Confirmar pedido</b>
-          </button>
-        </a>
-        <div style={{maxWidth: '240px'}}>
-          Al confirmar un pedido, se te redirige hacia WhatsApp para completar el proceso
+        { show &&
+        list && list.all && list.all.map(
+          (item,u) => <List key={u} item={item} />)
+          }
+        {list && list.all && !!list.all.length && 
+        <div style={{
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          backgroundColor: 'black',
+          padding: '4px 6px',
+          color: 'white',
+          margin: 'auto -4px',
+          border: '1px solid white'
+        }}>
+          <b>Total</b>
+          <b>
+            {sumaIds}
+          </b>
+        </div>}
+        {list && list.all && !!list.all.length && 
+        <div style={{width: '100%', display: 'block'}}>
+          <div style={{
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            backgroundColor: 'black',
+            padding: '4px 6px',
+            color: 'white',
+            margin: 'auto -4px',
+            border: '1px solid white',
+            width: '100%'
+          }}>
+            <a 
+              style={{width: '100%'}}
+              href={`https://wa.me/+541158774985?text=${msg}`}
+              title='Continuar con WhatsApp' 
+              target='_blank' 
+              rel="noreferrer"
+            >
+              <button 
+                style={{height: '100%', width: '100%', padding: '5px auto'}} 
+                onClick={()=>{}}>
+                <b>Confirmar pedido</b>
+              </button>
+            </a>
+          </div>
+          <div>
+            <button onClick={()=>setHelp(!help)}>¿Cómo realizar un pedido?</button>
+          </div>
+          {help && 
+          <div style={{fontSize: '13px', backgroundColor: 'rgb(32,32,32,0.8)', color: 'rgb(224,224,224)', textAlign: 'start'}}>
+            <br/>
+            Confirmá un pedido en 2 pasos: <br/>
+            1. Pulsá "Confirmar pedido".<br/>
+            2. Se te redirigirá a WhatsApp, enviá
+            el mensaje autogenerado que contiene tu lista.
+            <br/><br/>
+            O también podés optar por enviar una captura 
+            o una foto de la lista por WhatsApp 
+            pulsando {' acá: '}
+            <a className='awp' href='https://wa.me/+541158774985' target='_blank'><u color='orange'>Enviar WhatsApp</u></a>.
+            <br/><br/>
+            <button onClick={()=>setHelp(!help)}>Entendido</button>
+          </div>}
         </div>
-      </div>}
+        }
       </div>
     </div>
       <div style={{color:'gray', paddingTop: '80px', border: '1px solid gray', width: '240px', borderRadius: '8px', margin: 'auto'}}>
