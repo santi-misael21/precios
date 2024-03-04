@@ -160,7 +160,7 @@ function App() {
             Confirmá un pedido en 2 pasos: <br/>
             1. Pulsá "Confirmar pedido".<br/>
             2. Se te redirigirá a WhatsApp, enviá
-            el mensaje autogenerado que contiene tu lista.
+            el mensaje autogenerado y ya estamos.
             <br/><br/>
             O también podés optar por enviar una captura 
             o una foto de la lista por WhatsApp 
