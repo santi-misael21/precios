@@ -103,7 +103,7 @@ export let object = {
   Naranja: {
     // bolsa: '(17kg) $sin precio',
     // '1/2 bolsa': '(8.5kg) $sin precio',
-    '1/4 cajón': '(4.25kg) $2900',
+    '1/4 cajón (4.25kg)': '$2900',
     'por kg': '$850',
     'por 2kg': 1600,
     'por 3kg': '$2100',
@@ -136,5 +136,24 @@ export let object = {
     'por 2kg': 1600,
     'por kg llevando 2kg': '$800',
     color: 'greenyellow',
+  },
+  'Ofertas de fruta':{
+    color: 'yellowgreen'
+  },
+  'Oferta 1':{
+    '<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>': '$4300',
+    color: 'orangered'
+  },
+  'Oferta 2':{
+    '<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b>': '$3800',
+    color: 'orange'
+  },
+  'Oferta 3':{
+    '<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b>': '$4750',
+    color: 'yellow'
+  },
+  'Oferta 4':{
+    '<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>': '$5550',
+    color: 'wheat'
   },
 }

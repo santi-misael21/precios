@@ -8,6 +8,10 @@ import whatsLogo from './assets/WhatsApp.png';
 import { createBrowserRouter, useNavigate } from 'react-router-dom';
 import Stores from './components/Stores';
 import Product from './components/Product';
+import { useSelector } from 'react-redux';
+import Fraction from './components/Fraction';
+import { useEffect, useState } from 'react';
+import List from './components/List';
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +25,9 @@ export const router = createBrowserRouter([
 ]);
 
 function App() {
+  let list = useSelector(state => state.list); console.log({list})
+  let [show, setShow] = useState(true);
+
   let colour = (color) => {return {color}}
   let o = object;
   let pot = o.Papa
@@ -42,37 +49,139 @@ function App() {
   // let orangered = colour('orangered')
   // let wheat = colour('wheat')
   let yellowgreen = colour('yellowgreen')
-  const additem = (a) => console.log({a}) 
+  //const additem = (a) => console.log({a}) 
+  let sumaIds = 0;
+  list && list.all && list.all.forEach(item => sumaIds += item.p * item.selected)
+
+  let msg = ''
+
+  list && list.all && list.all.map(
+    (item,i)=>msg+='$'+item.p*item.selected+' '
+    +item.product+', '
+    +item.fraction.split('<br/>').join('').split('<b>').join('').split('</b>').join('')
+    +', ('+item.selected+'u) %0A'
+  )
+  msg+='\n'+ '$'+sumaIds+' Total'
+
+  console.log({list, msg})
+
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
-      <div style={{color:'gray'}}>
-    Lista de precios <br/>
-    Última actualización: 2 de marzo de 2024
-    <br/>
-    Contacto:
+      <div style={{
+      display: 'block', 
+      width: '240px', 
+      maxWidth: '95vw',
+      margin:'0px auto auto 0px', 
+      color: 'rgb(224,224,224)',
+    }}>
+      <div style={{
+        position: 'fixed',
+        backgroundColor: 'rgb(50,50,50,0.8)',
+        border: '1px solid orange',
+        padding: '8px',
+        margin:'0px', 
+        maxHeight: '60vh',
+        overflowY: 'scroll',
+        scrollbarColor: 'black',
+        
+      }}>
+        <button onClick={()=>setShow(true)} disabled={show}>Mostrar cuenta</button>
+        <button onClick={()=>setShow(false)} disabled={!show}>Ocultar cuenta</button>
+        {list && list.all && !!list.all.length && show &&
+        <div style={{
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          backgroundColor: 'black',
+          padding: '4px 6px',
+          color: 'white',
+          margin: 'auto -4px',
+          border: '1px solid white',
+          fontSize: '10px',
+          maxHeight:'fit-content'
+        }}>
+          <b style={{width: '20%', borderRight: '1px solid gray', paddingRight: '2px'}}>Unidades</b>
+          <b style={{width: '30%', borderRight: '1px solid gray', paddingRight: '2px'}}>Producto</b>
+          <b style={{width: '30%', borderRight: '1px solid gray', paddingRight: '2px'}}>Cantidad unitaria</b>
+          <b style={{width: '20%', paddingRight: '2px'}}>Precio</b>
+        </div>
+        }
+      { show &&
+      list && list.all && list.all.map(
+        (item,u) => <List key={u} item={item} />)
+        }
+      {list && list.all && !!list.all.length && 
+      <div style={{
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        backgroundColor: 'black',
+        padding: '4px 6px',
+        color: 'white',
+        margin: 'auto -4px',
+        border: '1px solid white'
+      }}>
+        <b>Total</b>
+        <b>
+          {sumaIds}
+        </b>
+      </div>}
+      {list && list.all && !!list.all.length && 
+      <div style={{
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        backgroundColor: 'black',
+        padding: '4px 6px',
+        color: 'white',
+        margin: 'auto -4px',
+        border: '1px solid white'
+      }}>
+        <a 
+          href={`https://wa.me/+541158774985?text=${msg}`}
+          title='Continuar con WhatsApp' 
+          target='_blank' 
+          rel="noreferrer"
+        >
+          <button 
+            style={{width: '100%', height: '100%', padding: '5px auto'}} 
+            onClick={()=>{}}>
+            <b>Confirmar pedido</b>
+          </button>
+        </a>
+        <div style={{maxWidth: '240px'}}>
+          Al confirmar un pedido, se te redirige hacia WhatsApp para completar el proceso
+        </div>
+      </div>}
+      </div>
     </div>
+      <div style={{color:'gray', paddingTop: '80px', border: '1px solid gray', width: '240px', borderRadius: '8px', margin: 'auto'}}>
+        Lista de precios 
+        <br/>
+        Última actualización: 2 de marzo de 2024
+        <br/>
+        Contacto:
+      </div>
+      <br/>
+      <div>
+                  {/* <div className='flex center'> */}
+                      <a href='https://wa.me/+541158774985' title='Enviar un mensaje de WhatsApp' target='_blank' rel="noreferrer">
+                          <img src={whatsLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                      </a>
+                  
+                      {/* <a href='https://www.facebook.com/profile.php?id=100095438713871' title='Visitar página de facebook' target='_blank' rel="noreferrer">
+                          <img src={faceLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                      </a>
+                  
+                      <a href='https://www.instagram.com/almacenstack/' title='Visitar página de instagram' target='_blank' rel="noreferrer">
+                          <img src={instaLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
+                      </a> */}
+                  {/* </div> */}
+        {/* <img src={whatsapp} href='' style={{width: '50px', borderRadius: '8px'}}/> */}
+      </div>
+      <br/> 
+      
+      {variables.map((v,i)=> //console.log(v['prod'])
+        <div key={i}> <Product ip={i} product={v['prod']} color={v['color']} /> <br/></div>
+        )}
     <br/>
-    <div>
-                {/* <div className='flex center'> */}
-                    <a href='https://wa.me/+541158774985' title='Enviar un mensaje de WhatsApp' target='_blank' rel="noreferrer">
-                        <img src={whatsLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
-                    </a>
-                
-                    {/* <a href='https://www.facebook.com/profile.php?id=100095438713871' title='Visitar página de facebook' target='_blank' rel="noreferrer">
-                        <img src={faceLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
-                    </a>
-                
-                    <a href='https://www.instagram.com/almacenstack/' title='Visitar página de instagram' target='_blank' rel="noreferrer">
-                        <img src={instaLogo} style={{height: '64px', margin: 'auto 16px'}} alt=''/>
-                    </a> */}
-                {/* </div> */}
-      {/* <img src={whatsapp} href='' style={{width: '50px', borderRadius: '8px'}}/> */}
-    </div>
-    <br/> 
-    {variables.map((v,i)=> //console.log(v['prod'])
-       <div key={i}> <Product product={v['prod']} color={v['color']} /> <br/></div>
-      )}
-  <br/>
   <div style={{display: 'block', width: '220px', margin: 'auto', color: 'wheat', backgroundColor: 'rgb(50,50,50,0.5)', padding: '10px'}}>
     Ofertas de fruta
     {/* <br/><br/>
