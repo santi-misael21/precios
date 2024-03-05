@@ -59,7 +59,11 @@ function App() {
   list && list.all && list.all.map(
     (item,i)=>msg+='$'+item.p*item.selected+' '
     +item.product+', '
-    +item.fraction.split('<br/>').join('').split('<b>').join('').split('</b>').join('')
+    +item.fraction.split('<br/>').join('')
+    .split('<b>').join('')
+    .split('</b>').join('')
+    .split('<del>').join('')
+    .split('</del>').join('')
     +', ('+item.selected+'u) %0A'
   )
   msg+='\n'+ '$'+sumaIds+' Total'

@@ -48,14 +48,18 @@ export default function Fraction ({object, product, fraction, i, ip, price, pric
         if (document.getElementById(String(ip)+String(i)).innerHTML !== fraction) document.getElementById(String(ip)+String(i)).innerHTML = fraction
     }, [])
 
+    let condition = (fraction.includes('llevando') ||
+    (typeof object[fraction] === 'string' && object[fraction].includes('%'))
+    )
+
     return (
         <div style={{
             display: 'flex', 
             justifyContent: 'space-between'}}
             >
             <div 
-            onClick={()=> {!fraction.includes('llevando') && setInput(!input); setSelected(selected? '': '1')}}
-            className={!fraction.includes('llevando') ? 'input' :''}
+            onClick={()=> {!condition  && setInput(!input); setSelected(selected? '': '1')}}
+            className={!condition  ? 'input' :''}
             style={{
                 display: 'flex', 
                 justifyContent: 'space-between', 
@@ -73,9 +77,12 @@ export default function Fraction ({object, product, fraction, i, ip, price, pric
                     justifyContent: 'space-between'
                 }}> 
                     <div id={String(ip)+String(i)}> </div> 
-                    <div>{fraction === 'Por 2kg' && '$'}{object[fraction]}</div> 
+                    <div>
+                        {fraction === 'Por 2kg' && '$'}
+                        {object[fraction]}
+                    </div> 
                 </div> 
-                { !fraction.includes('llevando') && 
+                { condition ? <></>:
                 <div style={{display: 'flex'}}>{
                     <input 
                     type='checkbox' 
@@ -87,7 +94,7 @@ export default function Fraction ({object, product, fraction, i, ip, price, pric
                     }
                 </div>}
             </div>
-                { !fraction.includes('llevando') && 
+                { !condition &&
                 <select style={{height: '32px', backgroundColor: 'black', color: 'white'}}
                 value={selected} 
                 onChange={e=>muting(e.target.value)}>

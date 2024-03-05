@@ -165,22 +165,23 @@ export let object = {
     color: 'greenyellow',
   },
   'Ofertas de fruta':{
-    color: 'yellowgreen'
+    color: 'yellowgreen',
+    'Martes 5/3/24': '+10% descuento en frutas'
   },
   'Oferta 1':{
-    '<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>': '$4300',
+    "<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana </b><br/><del>$4300</del>": '$4300',
     color: 'orangered'
   },
   'Oferta 2':{
-    '<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b>': '$3800',
+    '<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b><br/><del>$3800</del>': '$3800',
     color: 'orange'
   },
   'Oferta 3':{
-    '<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b>': '$4750',
+    '<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$4750</del>': '$4750',
     color: 'yellow'
   },
   'Oferta 4':{
-    '<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>': '$5550',
+    '<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$5550</del>': '$5550',
     color: 'wheat'
   },
 }
@@ -195,11 +196,11 @@ let ban = o.Banana["Por 2kg"];
 let man = o.Manzana["Por 2kg"];
 let dur = o.Durazno["Por 2kg"];
 
-object["Oferta 1"]["<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
-nar/2+ban/2+man/2
-object["Oferta 2"]["<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b>"]=
-nar/2+dur/2+ban/2
-object["Oferta 3"]["<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
-dur/2+ban/2+man/2
-object["Oferta 4"]["<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
-dur/2+nar/2+ban/2+man/2
+object["Oferta 1"]["<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana </b><br/><del>$4300</del>"]=
+`$${nar/2+ban/2+man/2}`
+object["Oferta 2"]["<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b><br/><del>$3800</del>"]=
+`$${nar/2+dur/2+ban/2}`
+object["Oferta 3"]["<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$4750</del>"]=
+`$${dur/2+ban/2+man/2}`
+object["Oferta 4"]["<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$5550</del>"]=
+`$${dur/2+nar/2+ban/2+man/2}`
