@@ -63,12 +63,12 @@ export let object = {
     'llevando 4': '$3500 cada 1',
     color: 'pink'
   },
-  'Aceite suelto Natura': {
-    '1 Litro': '$1600',
-    '2 Litros': '$3000',
-    'Precio por litro llevando 2': '$1500',
-    color: 'goldenrod',
-  },
+  // 'Aceite suelto Natura': {
+  //   '1 Litro': '$1600',
+  //   '2 Litros': '$3000',
+  //   'Precio por litro llevando 2': '$1500',
+  //   color: 'goldenrod',
+  // },
   // 'Harina de Trigo Leudante': {
   //   'Marolio 1kg': '$600',
   //   'color': 'burlywood',
