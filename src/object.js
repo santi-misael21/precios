@@ -69,15 +69,15 @@ export let object = {
     'Precio por litro llevando 2': '$1500',
     color: 'goldenrod',
   },
-  'Harina de Trigo Leudante': {
-    'Marolio 1kg': '$600',
-    'color': 'burlywood',
-  },
+  // 'Harina de Trigo Leudante': {
+  //   'Marolio 1kg': '$600',
+  //   'color': 'burlywood',
+  // },
   Azúcar: {
     'Salvador 1kg': '$1500',
     'Salvador 2kg': '$2800',
     'llevando 2kg': '$1400 por kg',
-    color: 'white'
+    color: 'burlywood'
   },
   // Acelga: {
   //   '<b>Atado</b>': '$1500',
