@@ -8,15 +8,6 @@ export let object = {
     'Por 2kg': 1100,
     color: 'yellow',
   },
-  // Batata: {
-  //   // bolsa: '(12kg) $7000',
-  //   // '1/2 bolsa': '(6kg) $3600',
-  //   // '1/4 bolsa': '(3kg) $1900',
-  //   'por kg': '$650',
-  //   'por 2kg': '$1200',
-  //   'por kg oferta': 600,
-  //   color: 'violet',
-  // },
   Cebolla: {
     'Bolsa (17kg)': '$9200',
     'llevando 1 bolsa': '$540 por kg',
@@ -29,13 +20,6 @@ export let object = {
     'llevando 3kg': '$600 por kg',
     color: 'wheat',
   },
-  // Zanahoria: {
-  //   bolsa: '(9kg) $9000',
-  //   '1/2 bolsa': '(4.5kg) $4800',
-  //   '1/4 bolsa': '(2.25kg) $2500',
-  //   'por kg': '$1150',
-  //   'por kg oferta': 1110
-  // },
   Anco: {
     // bolsa: '(13kg) $6800',
     // '1/2 bolsa': '(6.5kg) $3600',
@@ -44,6 +28,21 @@ export let object = {
     'Por 2kg': 1200,
     'llevando 2kg': '$600 por kg ',
     color: 'orange',
+  },
+  Zanahoria: {
+    'Bolsa (9kg)': '$8000',
+    '1/2 bolsa (4.5kg)': '$4200',
+    '1/4 bolsa (2.25kg)': '$2200',
+    'Por kg': '$1000',
+    color: 'orangered'
+  },
+  Batata: {
+    'Bolsa (12kg)': '$7000',
+    '1/2 bolsa (6kg)': '$3600',
+    '1/4 bolsa (3kg)': '$1900',
+    'Por kg': '$700',
+    'Por 2kg': 1200,
+    color: 'violet',
   },
   'Tomate perita': {
     // bolsa: '(17kg) $7500',
