@@ -182,6 +182,14 @@ function App() {
         <br/>
         Última actualización: 2 de marzo de 2024
         <br/>
+        <br/>
+        Domicilio local: 
+        <br/>
+        Vicente Casares 230, Alejandro Korn.
+        <br/>
+        <a href='https://maps.app.goo.gl/WuXhmb4KWm1cMAC38' target='_blank'>Ver en maps</a>
+        <br/>
+        <br/>
         Contacto:
       </div>
       <br/>
