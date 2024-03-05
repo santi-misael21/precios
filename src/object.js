@@ -80,40 +80,59 @@ export let object = {
     color: 'white'
   },
   // Acelga: {
-  //   'por atado': '$2000',
+  //   '<b>Atado</b>': '$1500',
+  //   color: 'green',
   // },
   // Perejil: {
-  //   'por atado': '$1500',
+  //   Atado: '$1700',
+  //   color: 'greenyellow',
   // },
   // Verdeo: {
-  //   'por atado': '$2000',
-    // '$540500 (quinientos cuarenta mil quinientos pesos)',
+  //   '<b>Atado</b>': '$2000',
+  //   color: 'green',
+  // },
+  // Radicheta: {
+  //   Atado: '$1300',
+  //   color: 'pink'
+  // },
+  // Remolacha: {
+  //   Atado: '$900',
+  //   color: 'violet'
+  // },
+  // Berenjena: {
+  //   'Por kg': '$800',
+  //   'Por 2kg': '$1500',
+  //   color: 'pink'
+  // },
+  // Repollo: {
+  //   'Por kg': '$900',
+  //   color: 'yellowgreen'
   // },
   Banana: {
     // bolsa: '(19kg) $sin precio',
     // '1/2 bolsa': '(9.5kg) $sin precio',
-    '1/4 cajón (4.75kg)': '$7000',
-    'Por kg': '$1800',
-    'Por 2kg': 3500,
-    'Por 3kg': '$4500',
-    'llevando 3kg': '$1500 por kg',
+    // '1/4 cajón (4.75kg)': '$6000',
+    'Por kg': '$1600',
+    'Por 2kg': 3000,
+    'Por 3kg': '$3900',
+    'llevando 3kg': '$1300 por kg',
     color: 'yellow',
   },
   Manzana: {
     // bolsa: '(17kg) $sin precio',
     // '1/2 bolsa': '(8.5kg) $sin precio',
     // '1/4 bolsa': '(4.25kg) $sin precio',
-    'Por kg': '$1800',
-    'Por 2kg': 3500,
-    'llevando 2kg': '$1750 por kg',
+    'Por kg': '$1600',
+    'Por 2kg': 3000,
+    'llevando 2kg': '$1500 por kg',
     color: 'red',
   },
   Naranja: {
     // bolsa: '(17kg) $sin precio',
     // '1/2 bolsa': '(8.5kg) $sin precio',
     '1/4 cajón (4.25kg)': '$2900',
-    'Por kg': '$850',
-    'Por 2kg': 1600,
+    'Por kg': '$800',
+    'Por 2kg': 1500,
     'Por 3kg': '$2100',
     'llevando 3kg': '$700 por kg',
     color: 'orange',
@@ -129,20 +148,20 @@ export let object = {
   Durazno: {
     // bolsa: '(12kg) $sin precio',
     // '1/2 bolsa': '(6kg) $sin precio',
-    '1/4 cajón (3kg)': '$3600',
-    'Por kg': '$1500',
-    'Por 2kg': 2500,
-    'Por 3kg': '$3600',
-    'llevando 3kg': '$1200 por kg',
+    // '1/4 cajón (3kg)': '$3600',
+    'Por kg': '$1300',
+    'Por 2kg': 2400,
+    'Por 3kg': '$3300',
+    'llevando 3kg': '$1100 por kg',
     color: 'wheat',
   },
   'Limón': {
     // bolsa: '(16kg) $7750',
     // '1/2 bolsa': '(8kg) $2800',
-    '1/4 cajón (4kg)': '$3000',
-    'Por kg': '$850',
-    'Por 2kg': 1600,
-    'llevando 2kg': '$800 por kg',
+    // '1/4 cajón (4kg)': '$3000',
+    'Por kg': '$800',
+    'Por 2kg': 1500,
+    'llevando 2kg': '$750 por kg',
     color: 'greenyellow',
   },
   'Ofertas de fruta':{
@@ -165,3 +184,22 @@ export let object = {
     color: 'wheat'
   },
 }
+let o = object;
+let o1 = o["Oferta 1"]
+let o2 = o["Oferta 2"]
+let o3 = o["Oferta 3"]
+let o4 = o["Oferta 4"]
+
+let nar = o.Naranja["Por 2kg"];
+let ban = o.Banana["Por 2kg"];
+let man = o.Manzana["Por 2kg"];
+let dur = o.Durazno["Por 2kg"];
+
+object["Oferta 1"]["<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
+nar/2+ban/2+man/2
+object["Oferta 2"]["<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b>"]=
+nar/2+dur/2+ban/2
+object["Oferta 3"]["<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
+dur/2+ban/2+man/2
+object["Oferta 4"]["<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b>"]=
+dur/2+nar/2+ban/2+man/2

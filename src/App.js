@@ -100,7 +100,7 @@ function App() {
           fontSize: '10px',
           maxHeight:'fit-content'
         }}>
-          <b style={{width: '20%', borderRight: '1px solid gray', paddingRight: '2px'}}>Unidades</b>
+          <b style={{width: '20%', borderRight: '1px solid gray', paddingRight: '2px'}}>Unids</b>
           <b style={{width: '30%', borderRight: '1px solid gray', paddingRight: '2px'}}>Producto</b>
           <b style={{width: '30%', borderRight: '1px solid gray', paddingRight: '2px'}}>Cantidad unitaria</b>
           <b style={{width: '20%', paddingRight: '2px'}}>Precio</b>
@@ -167,7 +167,7 @@ function App() {
             pulsando {' acá: '}
             <a className='awp' href='https://wa.me/+541158774985' target='_blank'><u color='orange'>Enviar WhatsApp</u></a>.
             <br/><br/>
-            <button onClick={()=>setHelp(!help)}>Entendido</button>
+            <button onClick={()=>setHelp(!help)}>Listo</button>
           </div>}
         </div>
         }
