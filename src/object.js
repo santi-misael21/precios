@@ -118,15 +118,15 @@ export let object = {
     'llevando 3kg': '$1300 por kg',
     color: 'yellow',
   },
-  Manzana: {
-    // bolsa: '(17kg) $sin precio',
-    // '1/2 bolsa': '(8.5kg) $sin precio',
-    // '1/4 bolsa': '(4.25kg) $sin precio',
-    'Por kg': '$1600',
-    'Por 2kg': 3000,
-    'llevando 2kg': '$1500 por kg',
-    color: 'red',
-  },
+  // Manzana: {
+  //   // bolsa: '(17kg) $sin precio',
+  //   // '1/2 bolsa': '(8.5kg) $sin precio',
+  //   // '1/4 bolsa': '(4.25kg) $sin precio',
+  //   'Por kg': '$1600',
+  //   'Por 2kg': 3000,
+  //   'llevando 2kg': '$1500 por kg',
+  //   color: 'red',
+  // },
   Naranja: {
     // bolsa: '(17kg) $sin precio',
     // '1/2 bolsa': '(8.5kg) $sin precio',
@@ -169,19 +169,19 @@ export let object = {
     'Martes 5/3/24': '+10% descuento en frutas'
   },
   'Oferta 1':{
-    "<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana </b><br/><del>$4300</del>": '$4300',
+    "<b>1kg naranja <br/> + 1kg banana</b><br/>": '',
     color: 'orangered'
   },
   'Oferta 2':{
-    '<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b><br/><del>$3800</del>': '$3800',
+    '<b>1kg naranja <br/> + 1kg durazno</b><br/>': '',
     color: 'orange'
   },
   'Oferta 3':{
-    '<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$4750</del>': '$4750',
+    '<b>1kg durazno <br/> + 1kg banana</b><br/>': '',
     color: 'yellow'
   },
   'Oferta 4':{
-    '<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$5550</del>': '$5550',
+    '<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana</b><br/>': '',
     color: 'wheat'
   },
 }
@@ -193,14 +193,13 @@ let o4 = o["Oferta 4"]
 
 let nar = o.Naranja["Por 2kg"];
 let ban = o.Banana["Por 2kg"];
-let man = o.Manzana["Por 2kg"];
 let dur = o.Durazno["Por 2kg"];
 
-object["Oferta 1"]["<b>1kg naranja <br/> + 1kg banana <br/> + 1kg manzana </b><br/><del>$4300</del>"]=
-`$${nar/2+ban/2+man/2}`
-object["Oferta 2"]["<b>1kg naranja <br/> + 1kg durazno <br/> + 1kg banana</b><br/><del>$3800</del>"]=
-`$${nar/2+dur/2+ban/2}`
-object["Oferta 3"]["<b>1kg durazno <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$4750</del>"]=
-`$${dur/2+ban/2+man/2}`
-object["Oferta 4"]["<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana <br/> + 1kg manzana</b><br/><del>$5550</del>"]=
-`$${dur/2+nar/2+ban/2+man/2}`
+object["Oferta 1"]["<b>1kg naranja <br/> + 1kg banana</b><br/>"]=
+`$${nar/2+ban/2}`
+object["Oferta 2"]["<b>1kg naranja <br/> + 1kg durazno</b><br/>"]=
+`$${nar/2+dur/2}`
+object["Oferta 3"]["<b>1kg durazno <br/> + 1kg banana</b><br/>"]=
+`$${dur/2+ban/2}`
+object["Oferta 4"]["<b>1kg durazno <br/> + 1kg naranja <br/> + 1kg banana</b><br/>"]=
+`$${dur/2+nar/2+ban/2}`
