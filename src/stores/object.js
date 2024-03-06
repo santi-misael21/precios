@@ -1,4 +1,4 @@
-let $ ='$';
+// let $ ='$';
 export let objectStores = {
     Papa: {
         bolsa: '(17kg) $10880',
