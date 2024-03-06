@@ -29,21 +29,26 @@ export let object = {
     'llevando 2kg': '$600 por kg ',
     color: 'orange',
   },
-  Zanahoria: {
-    'Bolsa (9kg)': '$8000',
-    '1/2 bolsa (4.5kg)': '$4200',
-    '1/4 bolsa (2.25kg)': '$2200',
-    'Por kg': '$1000',
-    color: 'orangered'
+  'Lechuga criolla': {
+	'1/2 cajón': '$4500',
+	'llevando por kg': 'Consultar',
+	color: 'lime'
   },
-  Batata: {
-    'Bolsa (12kg)': '$7000',
-    '1/2 bolsa (6kg)': '$3600',
-    '1/4 bolsa (3kg)': '$1900',
-    'Por kg': '$700',
-    'Por 2kg': 1200,
-    color: 'violet',
-  },
+  // Zanahoria: {
+  //   'Bolsa (9kg)': '$8000',
+  //   '1/2 bolsa (4.5kg)': '$4200',
+  //   '1/4 bolsa (2.25kg)': '$2200',
+  //   'Por kg': '$1000',
+  //   color: 'orangered'
+  // },
+  // Batata: {
+  //   'Bolsa (12kg)': '$7000',
+  //   '1/2 bolsa (6kg)': '$3600',
+  //   '1/4 bolsa (3kg)': '$1900',
+  //   'Por kg': '$700',
+  //   'Por 2kg': 1200,
+  //   color: 'violet',
+  // },
   'Tomate perita': {
     // bolsa: '(17kg) $7500',
     '1/2 cajón (8.5kg)': '$4000',
@@ -185,10 +190,10 @@ export let object = {
   },
 }
 let o = object;
-let o1 = o["Oferta 1"]
-let o2 = o["Oferta 2"]
-let o3 = o["Oferta 3"]
-let o4 = o["Oferta 4"]
+// let o1 = o["Oferta 1"]
+// let o2 = o["Oferta 2"]
+// let o3 = o["Oferta 3"]
+// let o4 = o["Oferta 4"]
 
 let nar = o.Naranja["Por 2kg"];
 let ban = o.Banana["Por 2kg"];
