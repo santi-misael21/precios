@@ -31,7 +31,9 @@ export let object = {
 //   },
   'Lechuga criolla': {
 	'1/2 cajón': '$4500',
-	'llevando por kg': 'Consultar',
+	'1 Planta': '$600',
+  '2 Plantas': '$1100',
+  '3 Plantas': '$1500',
 	color: 'lime'
   },
   // Zanahoria: {
