@@ -30,7 +30,7 @@ export let object = {
 //     color: 'orange',
 //   },
   'Lechuga criolla': {
-	'1/2 cajón': '$4500',
+	// '1/2 cajón': '$4500',
 	'1 Planta': '$600',
   '2 Plantas': '$1100',
   '3 Plantas': '$1500',
