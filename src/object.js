@@ -78,19 +78,23 @@ export let object = {
   },
   'Bizcochos 9 de oro': {
     Clásicos: '$900',
-    Azucarados: '$900'
+    Azucarados: '$900',
+    color: 'gold',
   },
   'Fideos Favorita 500g': {
     Spaghetti: '$950',
     Codito: '$950',
-    Mostachol: '$950'
+    Mostachol: '$950',
+    color: 'red',
   },
   'Fideos Lucchetti': {
     'Codito 500g': '$1800',
-    'Tirabuzón': '$1800'
+    'Tirabuzón': '$1800',
+    color: 'rgb(22,142,203)',
   },
   'Puré de tomate 520g': {
-    'S&P': '$950'
+    'S&P': '$950',
+    color: 'red',
   },
   // 'Aceite suelto Natura': {
   //   '1 Litro': '$1600',
