@@ -87,8 +87,8 @@ export let object = {
     Mostachol: '$950',
     color: 'red',
   },
-  'Fideos Lucchetti': {
-    'Codito 500g': '$1800',
+  'Fideos Lucchetti 500g': {
+    'Codito': '$1800',
     'Tirabuzón': '$1800',
     color: 'rgb(22,142,203)',
   },
