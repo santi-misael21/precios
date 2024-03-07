@@ -114,16 +114,17 @@ export let object = {
   //   'Por kg': '$900',
   //   color: 'yellowgreen'
   // },
-//   Banana: {
-//     // bolsa: '(19kg) $sin precio',
-//     // '1/2 bolsa': '(9.5kg) $sin precio',
-//     // '1/4 cajón (4.75kg)': '$6000',
-//     'Por kg': '$1600',
-//     'Por 2kg': 3000,
-//     'Por 3kg': '$3900',
-//     'llevando 3kg': '$1300 por kg',
-//     color: 'yellow',
-//   },
+  'Banana (para licuado)': {
+    // bolsa: '(19kg) $sin precio',
+    // '1/2 bolsa': '(9.5kg) $sin precio',
+    // '1/4 cajón (4.75kg)': '$6000',
+    'Por 1/2 kg': '$500',
+    'Por kg': '$1000',
+    'Por 2kg': 1800,
+    // 'Por 3kg': '$3900',
+    // 'llevando 3kg': '$1300 por kg',
+    color: 'yellow',
+  },
   // Manzana: {
   //   // bolsa: '(17kg) $sin precio',
   //   // '1/2 bolsa': '(8.5kg) $sin precio',
