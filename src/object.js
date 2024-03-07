@@ -62,11 +62,18 @@ export let object = {
     color: 'red',
   },
   'Huevos N° 1': {
-    'Maple': '$3800',
-    '2 maples': '$7400',
-    'llevando 2': '$3700 cada 1 ',
-    '4 maples': '$14000',
-    'llevando 4': '$3500 cada 1',
+    '1/2 Docena (6u)': '$1000',
+    '1 Docena (12u)': '$1950',
+    '1/2 Maple (15u)': '$2400',
+    'Maple': '$4800',
+    '2 maples': '$8800',
+    'llevando 2': '$4400 cada 1 ',
+    '3 maples': '$12000',
+    'llevando 4': '$4000 cada 1',
+    color: 'pink'
+  },
+  'Huevos N° 3': {
+    '1/2 Docena (6u)': '$900',
     color: 'pink'
   },
   // 'Aceite suelto Natura': {
