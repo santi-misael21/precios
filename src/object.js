@@ -76,6 +76,22 @@ export let object = {
     '1/2 Docena (6u)': '$900',
     color: 'pink'
   },
+  'Bizcochos 9 de oro': {
+    Clásicos: '$900',
+    Azucarados: '$900'
+  },
+  'Fideos Favorita 500g': {
+    Spaghetti: '$950',
+    Codito: '$950',
+    Mostachol: '$950'
+  },
+  'Fideos Lucchetti': {
+    'Codito 500g': '$1800',
+    'Tirabuzón': '$1800'
+  },
+  'Puré de tomate 520g': {
+    'S&P': '$950'
+  },
   // 'Aceite suelto Natura': {
   //   '1 Litro': '$1600',
   //   '2 Litros': '$3000',
