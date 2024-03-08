@@ -69,7 +69,7 @@ export let object = {
     '2 maples': '$8800',
     'llevando 2': '$4400 cada 1 ',
     '3 maples': '$12000',
-    'llevando 4': '$4000 cada 1',
+    'llevando 3': '$4000 cada 1',
     color: 'pink'
   },
   'Huevos N° 3': {
@@ -95,7 +95,7 @@ export let object = {
   'Puré de tomate 520g': {
     'S&P': '$950',
     color: 'red',
-  },
+  }, 
   // 'Aceite suelto Natura': {
   //   '1 Litro': '$1600',
   //   '2 Litros': '$3000',
