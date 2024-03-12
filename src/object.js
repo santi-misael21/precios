@@ -1,34 +1,34 @@
 export let object = {
   Papa: {
-    'Bolsa (17kg)': '$7650',
-    'llevando 1 bolsa': '$450 por kg ',
-    '1/2 bolsa (8.5kg)': '$4000',
-    '1/4 bolsa (4.25kg)': '$2300',
-    'Por kg': '$600',
-    'Por 2kg': 1100,
+    'Bolsa (17kg)': '$9400',
+    'llevando 1 bolsa': '$552 por kg ',
+    '1/2 bolsa (8.5kg)': '$5000',
+    '1/4 bolsa (4.25kg)': '$2600',
+    'Por kg': '$650',
+    'Por 2kg': 1250,
     color: 'yellow',
   },
   Cebolla: {
-    // 'Bolsa (17kg)': '$9200',
-    // 'llevando 1 bolsa': '$540 por kg',
-    // '1/2 bolsa (8.5kg)': '$4900',
-    // '1/4 bolsa (4.25kg)': '$2500',
-    // 'llevando 1/4 bolsa': '$590 por kg',
+    'Bolsa (17kg)': '$9200',
+    'llevando 1 bolsa': '$540 por kg',
+    '1/2 bolsa (8.5kg)': '$4900',
+    '1/4 bolsa (4.25kg)': '$2500',
+    'llevando 1/4 bolsa': '$590 por kg',
     'Por kg': '$800',
     'Por 2kg': 1500,
     'Por 3kg': '$2100',
     'llevando 3kg': '$700 por kg',
     color: 'wheat',
   },
-//   Anco: {
-//     // bolsa: '(13kg) $6800',
-//     // '1/2 bolsa': '(6.5kg) $3600',
-//     // '1/4 bolsa': '(3.25kg) $1900',
-//     'Por kg': '$650',
-//     'Por 2kg': 1200,
-//     'llevando 2kg': '$600 por kg ',
-//     color: 'orange',
-//   },
+  Anco: {
+    bolsa: '(13kg) $7600',
+    '1/2 bolsa': '(6.5kg) $3800',
+    '1/4 bolsa': '(3.25kg) $1900',
+    'Por kg': '$650',
+    'Por 2kg': 1200,
+    'llevando 2kg': '$600 por kg ',
+    color: 'orange',
+  },
   'Lechuga criolla': {
 	// '1/2 cajón': '$4500',
 	'1 Planta': '$600',
@@ -36,29 +36,29 @@ export let object = {
   '3 Plantas': '$1500',
 	color: 'lime'
   },
-  // Zanahoria: {
-  //   'Bolsa (9kg)': '$8000',
-  //   '1/2 bolsa (4.5kg)': '$4200',
-  //   '1/4 bolsa (2.25kg)': '$2200',
-  //   'Por kg': '$1000',
-  //   color: 'orangered'
-  // },
-  // Batata: {
-  //   'Bolsa (12kg)': '$7000',
-  //   '1/2 bolsa (6kg)': '$3600',
-  //   '1/4 bolsa (3kg)': '$1900',
-  //   'Por kg': '$700',
-  //   'Por 2kg': 1200,
-  //   color: 'violet',
-  // },
+  Zanahoria: {
+    'Bolsa (9kg)': '$8000',
+    '1/2 bolsa (4.5kg)': '$4200',
+    '1/4 bolsa (2.25kg)': '$2200',
+    'Por kg': '$1000',
+    color: 'orangered'
+  },
+  Batata: {
+    'Bolsa (12kg)': '$7000',
+    '1/2 bolsa (6kg)': '$3600',
+    '1/4 bolsa (3kg)': '$1900',
+    'Por kg': '$700',
+    'Por 2kg': 1200,
+    color: 'violet',
+  },
   'Tomate perita': {
-    // bolsa: '(17kg) $7500',
-    '1/2 cajón (8.5kg)': '$4000',
-    '1/4 cajón (4.25kg)': '$2100',
-    'Por kg': '$550',
-    'Por 2kg': 1050,
-    'Por 3kg': '$1500',
-    'llevando 3kg': '$500 por kg ',
+    bolsa: '(17kg) $9000',
+    '1/2 cajón (8.5kg)': '$4500',
+    '1/4 cajón (4.25kg)': '$2250',
+    'llevando 1/4 cajón': '$530 por kg ',
+    'Por kg': '$600',
+    'Por 2kg': 1100,
+    'Por 3kg': '$1600',
     color: 'red',
   },
   'Huevos N° 1': {
@@ -66,10 +66,6 @@ export let object = {
     '1 Docena (12u)': '$1950',
     '1/2 Maple (15u)': '$2400',
     'Maple': '$4800',
-    '2 maples': '$8800',
-    'llevando 2': '$4400 cada 1 ',
-    '3 maples': '$12000',
-    'llevando 3': '$4000 cada 1',
     color: 'pink'
   },
   'Huevos N° 3': {
@@ -77,8 +73,8 @@ export let object = {
     color: 'pink'
   },
   'Bizcochos 9 de oro': {
-    Clásicos: '$900',
-    Azucarados: '$900',
+    Clásicos: '$800',
+    Azucarados: '$800',
     color: 'gold',
   },
   'Fideos Favorita 500g': {
@@ -93,9 +89,17 @@ export let object = {
     color: 'rgb(22,142,203)',
   },
   'Puré de tomate 520g': {
-    'S&P': '$950',
+    'S&P': '$850',
     color: 'red',
-  }, 
+  },
+  'Arroz Parboil 500g': {
+    'Molinos Ala': '$1700'
+  },
+  'Manaos 2.25L': {
+    Cola: '$1100',
+    Lima: '$1100',
+    Pomelo: '$1100'
+  },
   // 'Aceite suelto Natura': {
   //   '1 Litro': '$1600',
   //   '2 Litros': '$3000',
@@ -141,17 +145,17 @@ export let object = {
   //   'Por kg': '$900',
   //   color: 'yellowgreen'
   // },
-  'Banana (para licuado)': {
-    // bolsa: '(19kg) $sin precio',
-    // '1/2 bolsa': '(9.5kg) $sin precio',
-    // '1/4 cajón (4.75kg)': '$6000',
-    'Por 1/2 kg': '$500',
-    'Por kg': '$1000',
-    'Por 2kg': 1800,
-    // 'Por 3kg': '$3900',
-    // 'llevando 3kg': '$1300 por kg',
-    color: 'yellow',
-  },
+  // 'Banana (para licuado)': {
+  //   // bolsa: '(19kg) $sin precio',
+  //   // '1/2 bolsa': '(9.5kg) $sin precio',
+  //   // '1/4 cajón (4.75kg)': '$6000',
+  //   'Por 1/2 kg': '$500',
+  //   'Por kg': '$1000',
+  //   'Por 2kg': 1800,
+  //   // 'Por 3kg': '$3900',
+  //   // 'llevando 3kg': '$1300 por kg',
+  //   color: 'yellow',
+  // },
   // Manzana: {
   //   // bolsa: '(17kg) $sin precio',
   //   // '1/2 bolsa': '(8.5kg) $sin precio',
