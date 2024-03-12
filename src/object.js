@@ -93,12 +93,14 @@ export let object = {
     color: 'red',
   },
   'Arroz Parboil 500g': {
-    'Molinos Ala': '$1700'
+    'Molinos Ala': '$1700',
+    color: 'yellow'
   },
   'Manaos 2.25L': {
     Cola: '$1100',
     Lima: '$1100',
-    Pomelo: '$1100'
+    Pomelo: '$1100',
+    color: 'red'
   },
   // 'Aceite suelto Natura': {
   //   '1 Litro': '$1600',
