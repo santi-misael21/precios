@@ -20,8 +20,8 @@ export let object = {
     color: 'wheat',
   },
   Anco: {
-    bolsa: '(13kg) $900',
-    '1/2 bolsa': '(9.75kg) $6700',
+    bolsa: '(13kg) $9000',
+    '3/4 bolsa': '(9.75kg) $6700',
     '1/2 bolsa': '(6.5kg) $4800',
     '1/4 bolsa': '(3.25kg) $2500',
     'Por kg': '$650',
