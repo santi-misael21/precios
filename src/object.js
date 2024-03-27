@@ -38,7 +38,7 @@ export let object = {
   // },
   Zanahoria: {
     'Bolsa (9kg)': '$8500',
-    '3/4 bolsa (4.5kg)': '$6600',
+    '3/4 bolsa (6.75kg)': '$6600',
     '1/2 bolsa (4.5kg)': '$4500',
     '1/4 bolsa (2.25kg)': '$2250',
     'Por kg': '$1000',
