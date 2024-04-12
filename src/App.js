@@ -180,7 +180,7 @@ function App() {
       <div style={{color:'gray', paddingTop: '80px', border: '1px solid gray', width: '240px', borderRadius: '8px', margin: 'auto'}}>
         Lista de precios 
         <br/>
-        Última actualización: 2 de marzo de 2024
+        Última actualización: 12 de abril de 2024
         <br/>
         <br/>
         Domicilio local: 
