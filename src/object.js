@@ -17,7 +17,7 @@ export let object = {
     '1/4 bolsa (4.25kg)': '$2900',
     'llevando 1/4 bolsa': '$680 por kg',
     'Por kg': '$800',
-    'Por 2kg': '$1500',
+    'Por 2kg': 1500,
     color: 'wheat',
   },
   Anco: {
