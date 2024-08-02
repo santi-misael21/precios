@@ -31,14 +31,6 @@ export let object = {
       color: 'violet',
       ...calculate(13, 8000)
     },
-    'Tomate perita': {
-      bolsa: '(17kg) $5800',
-      '1/2 bolsa': '(8.5kg) $3000',
-      '1/4 bolsa': '(4.25kg) $1550',
-      'por kg': '$390',
-      'por 2kg': '$730',
-      'por kg oferta': 365
-    },
   // 'Tomate perita': {
   //   'Cajón (17kg)': '$13900',
   //   // 'llevando 1 bolsa': '$817 por kg',
