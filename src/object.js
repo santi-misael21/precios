@@ -1,58 +1,44 @@
+function calculate (peso, precio, entire = 1.4, threequarts = 1.45, half = 1.5, quart = 1.55, kg = 1.6) {
+	let pp = precio / peso;
+	return {
+		'1 bolsa': '$' + Math.ceil((precio * entire) / 100) * 100,
+		'3/4 bolsa': '$' + Math.ceil((precio * .75 * threequarts) / 100) * 100,
+		'1/2 bolsa': '$' + Math.ceil((precio * .5 * half) / 100) * 100,
+		'1/4 bolsa': '$' + Math.ceil((precio * quart * .25) / 100) * 100,
+		'por kg': '$' + Math.ceil((pp * kg) / 100) * 100,
+	}
+}
+//papa cebolla anco zan batata
+
 export let object = {
-  Papa: {
-    'Bolsa (17kg)': '$8000',
-    'llevando 1 bolsa': '$470 por kg ',
-    '3/4 bolsa (12.75kg)': '$6400',
-    '1/2 bolsa (8.5kg)': '$4400',
-    '1/4 bolsa (4.25kg)': '$2300',
-    'Por kg': '$600',
-    'Por 2kg': 1100,
-    color: 'yellow',
-  },
-  Cebolla: {
-    'Bolsa (17kg)': '$9500',
-    'llevando 1 bolsa': '$560 por kg',
-    '3/4 bolsa (12.75kg)': '$8200',
-    '1/2 bolsa (8.5kg)': '$5600',
-    '1/4 bolsa (4.25kg)': '$2900',
-    'llevando 1/4 bolsa': '$680 por kg',
-    'Por kg': '$800',
-    'Por 2kg': 1500,
-    color: 'wheat',
-  },
-  Anco: {
-    bolsa: '(13kg) $8000',
-    '3/4 bolsa': '(9.75kg) $6400',
-    '1/2 bolsa': '(6.5kg) $4400',
-    '1/4 bolsa': '(3.25kg) $2300',
-    'Por kg': '$750',
-    'Por 2kg': 1450,
-    color: 'orange',
-  },
-  // 'Lechuga criolla': {
-	// // '1/2 cajón': '$4500',
-	// '1 Planta': '$600',
-  // '2 Plantas': '$1100',
-  // '3 Plantas': '$1500',
-	// color: 'lime'
-  // },
-  Zanahoria: {
-    'Bolsa (9kg)': '$8000',
-    '3/4 bolsa (6.75kg)': '$6400',
-    '1/2 bolsa (4.5kg)': '$4400',
-    '1/4 bolsa (2.25kg)': '$2300',
-    'Por kg': '$1050',
-    color: 'orangered'
-  },
-  Batata: {
-    'Bolsa (12kg)': '$8000',
-    '3/2 bolsa (9kg)': '$6400',
-    '1/2 bolsa (6kg)': '$4400',
-    '1/4 bolsa (3kg)': '$2300',
-    'Por kg': '$800',
-    'Por 2kg': 1550,
-    color: 'violet',
-  },
+    Papa: {
+      color: 'yellow',
+      ...calculate(17, 8800)
+    },
+    Cebolla: {
+      color: 'wheat',
+      ...calculate(17, 16000)
+    },
+    Anco: {
+      color: 'orange',
+      ...calculate(13, 6000)
+    },
+    Zanahoria: {
+      color: 'orangered',
+      ...calculate(9, 7000)},
+    Batata:
+     {
+      color: 'violet',
+      ...calculate(13, 8000)
+    },
+    'Tomate perita': {
+      bolsa: '(17kg) $5800',
+      '1/2 bolsa': '(8.5kg) $3000',
+      '1/4 bolsa': '(4.25kg) $1550',
+      'por kg': '$390',
+      'por 2kg': '$730',
+      'por kg oferta': 365
+    },
   // 'Tomate perita': {
   //   'Cajón (17kg)': '$13900',
   //   // 'llevando 1 bolsa': '$817 por kg',
